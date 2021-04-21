@@ -5,7 +5,7 @@ const EditarProducto = () => {
     return (
         <Container>
           <Form className="my-5">
-            <h1 className="my-5">Agregar nuevo producto</h1>
+            <h1 className="my-5">Editar producto</h1>
             <Form.Group>
               <Form.Label>Nombre del producto* </Form.Label>
               <Form.Control

@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Alert } from "react-bootstrap";
+import Swal from 'sweetalert2'
 
 const AgregarProducto = () => {
   const [nombreProducto, setNombreProducto] = useState("");
   const [precioProducto, setPrecioProducto] = useState(0);
   const [categoria, setCategoria] = useState("");
-const [error, setError] = useState(false);
-//Traer variable de entorno
-const URL = process.env.REACT_APP_API_URL;
-console.log(URL);
+  const [error, setError] = useState(false);
+  //Traer variable de entorno
+  const URL = process.env.REACT_APP_API_URL;
+  console.log(URL);
 
   const leerCategoria = (e) => {
     setCategoria(e.target.value);
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("prueba de submit");
+   // console.log(e.target);
     //validaciones
     if (
       nombreProducto.trim() !== "" &&
@@ -26,49 +27,57 @@ console.log(URL);
       //si esta todo bien envio los datos del producto a la API
       setError(false);
 
-//crear un objeto
-//izquierda propiedad json la derecha el state
-/* nombreProducto: nombreProducto,
+      //crear un objeto
+      //izquierda propiedad json la derecha el state
+      /* nombreProducto: nombreProducto,
 precioProducto: precioProducto,
 categoria: categoria */
-const producto = {
-//otra forma abreviada *solo si las propiedades izq y der son iguales en nombre
-nombreProducto,
-precioProducto,
-categoria
-}
+      const producto = {
+        //otra forma abreviada *solo si las propiedades izq y der son iguales en nombre
+        nombreProducto,
+        precioProducto,
+        categoria,
+      };
 
-//enviar el request POST
-try{
-    //estructura de datos a enviar
-    const cabecera={
-        method: "POST",
-        headers: {
-            "Content-type":"application/json"
-        },
-        body: JSON.stringify(producto)
-    };
+      //enviar el request POST
+      try {
+        //estructura de datos a enviar
+        const cabecera = {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify(producto),
+        };
 
-    const response = await fetch(URL, cabecera);
-    console.log(response);
+        const response = await fetch(URL, cabecera);
+        console.log(response);
 
-    if(response.status === 201){
-        alert("datos enviados")
-        //mostrar una venta de sweetAlart2
-    }
+        if (response.status === 201) {
+          //mostrar una venta de sweetAlart2
+          Swal.fire(
+            'Producto agregado',
+            'El producto se cargo correctamente',
+            'success'
+          )
+          //resetear formulario
+          e.target.reset();
+          //redireccionar al componente listarProductos
+        }
+      } catch (error) {
+        console.log(error);
+        //mostrar un cartel de error al usuario
+        Swal.fire(
+          'Ocurrio un error',
+          'Intentelo nuevamente en unos minutos',
+          'error'
+        )
+      }
 
-}catch(error){
-console.log(error);
-//mostrar un cartel de error al usuario
-
-}
-
-
-//Espero la respuesta
-
+      //Espero la respuesta
     } else {
       //Si fallo muestro un cartel de error
-setError(true);
+      setError(true);
     }
   };
 
@@ -130,12 +139,11 @@ setError(true);
         <Button variant="danger" type="submit" className="w-100">
           Guardar
         </Button>
-        {
-            (error === true )? ( <Alert variant='danger' className='my-5'>
+        {error === true ? (
+          <Alert variant="danger" className="my-5">
             Faltan cargar datos obligatorios
-            </Alert>): null 
-        }
-       
+          </Alert>
+        ) : null}
       </Form>
     </Container>
   );

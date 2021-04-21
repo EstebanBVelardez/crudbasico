@@ -35,6 +35,54 @@
       "precioProducto": 100,
       "categoria": "bebida-caliente",
       "id": 6
+    },
+    {
+      "nombreProducto": "Brownie",
+      "precioProducto": 100,
+      "categoria": "dulce",
+      "id": 7
+    },
+    {
+      "nombreProducto": "Brownie",
+      "precioProducto": 100,
+      "categoria": "dulce",
+      "id": 8
+    },
+    {
+      "nombreProducto": "licuado",
+      "precioProducto": 50,
+      "categoria": "bebida-fria",
+      "id": 9
+    },
+    {
+      "nombreProducto": "licuado",
+      "precioProducto": 50,
+      "categoria": "bebida-fria",
+      "id": 10
+    },
+    {
+      "nombreProducto": "licuado",
+      "precioProducto": 50,
+      "categoria": "bebida-fria",
+      "id": 11
+    },
+    {
+      "nombreProducto": "cafe",
+      "precioProducto": 75,
+      "categoria": "bebida-caliente",
+      "id": 12
+    },
+    {
+      "nombreProducto": "cafe",
+      "precioProducto": 75,
+      "categoria": "bebida-caliente",
+      "id": 13
+    },
+    {
+      "nombreProducto": "cafe",
+      "precioProducto": 75,
+      "categoria": "bebida-caliente",
+      "id": 14
     }
   ]
 }

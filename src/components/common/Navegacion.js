@@ -18,7 +18,7 @@ const Navegacion = () => {
           <NavLink exact={true} to="/productos/nuevo" className="nav-link">
             Agregar Productos
           </NavLink>
-          <NavLink exact={true} to="/productos/EditarProducto" className="nav-link">
+          <NavLink exact={true} to="/productos/editarProducto" className="nav-link">
 Editar producto
           </NavLink>
         </Nav>

@@ -18,6 +18,9 @@ const Navegacion = () => {
           <NavLink exact={true} to="/productos/nuevo" className="nav-link">
             Agregar Productos
           </NavLink>
+          <NavLink exact={true} to="/productos/EditarProducto" className="nav-link">
+Editar producto
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

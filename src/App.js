@@ -6,6 +6,7 @@ import ListarProductos from "./components/ListarProductos";
 import AgregarProducto from "./components/AgregarProducto";
 import Navegacion from "./components/common/Navegacion";
 import Footer from "./components/common/Footer";
+import EditarProducto from "./components/EditarProducto";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route exact path="/productos/nuevo">
           <AgregarProducto></AgregarProducto>
+        </Route>
+        <Route exact path="/productos/EditarProducto">
+         <EditarProducto></EditarProducto>
         </Route>
       </Switch>
       <Footer></Footer>

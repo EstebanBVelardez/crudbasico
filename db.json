@@ -1,21 +1,40 @@
 {
-    "cafeteria": [{
-            "nombreProducto": "cafe con leche",
-            "precioProducto": "50",
-            "categoria": "bebida-caliente",
-            "id": 1
-        },
-        {
-            "nombreProducto": "Submarino",
-            "precioProducto": "100",
-            "categoria": "bebida-caliente",
-            "id": 2
-        },
-        {
-            "nombreProducto": "medialunas x unidad",
-            "precioProducto": "35",
-            "categoria": "dulce",
-            "id": 3
-        }
-    ]
+  "cafeteria": [
+    {
+      "nombreProducto": "cafe con leche",
+      "precioProducto": "50",
+      "categoria": "bebida-caliente",
+      "id": 1
+    },
+    {
+      "nombreProducto": "Submarino",
+      "precioProducto": "100",
+      "categoria": "bebida-caliente",
+      "id": 2
+    },
+    {
+      "nombreProducto": "medialunas x unidad",
+      "precioProducto": "35",
+      "categoria": "dulce",
+      "id": 3
+    },
+    {
+      "nombreProducto": "pan",
+      "precioProducto": 100,
+      "categoria": "salado",
+      "id": 4
+    },
+    {
+      "nombreProducto": "Té",
+      "precioProducto": 40,
+      "categoria": "bebida-caliente",
+      "id": 5
+    },
+    {
+      "nombreProducto": "Cafe",
+      "precioProducto": 100,
+      "categoria": "bebida-caliente",
+      "id": 6
+    }
+  ]
 }

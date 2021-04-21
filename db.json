@@ -83,6 +83,24 @@
       "precioProducto": 75,
       "categoria": "bebida-caliente",
       "id": 14
+    },
+    {
+      "nombreProducto": "te",
+      "precioProducto": 75,
+      "categoria": "bebida-caliente",
+      "id": 15
+    },
+    {
+      "nombreProducto": "te",
+      "precioProducto": 75,
+      "categoria": "bebida-caliente",
+      "id": 16
+    },
+    {
+      "nombreProducto": "te",
+      "precioProducto": 75,
+      "categoria": "bebida-caliente",
+      "id": 17
     }
   ]
 }

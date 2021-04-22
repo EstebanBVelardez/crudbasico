@@ -101,6 +101,12 @@
       "precioProducto": 75,
       "categoria": "bebida-caliente",
       "id": 17
+    },
+    {
+      "nombreProducto": "Medialuna con dulce de leche",
+      "precioProducto": 60,
+      "categoria": "dulce",
+      "id": 18
     }
   ]
 }

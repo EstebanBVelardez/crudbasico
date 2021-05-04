@@ -25,8 +25,8 @@
       "id": 4
     },
     {
-      "nombreProducto": "Té",
-      "precioProducto": 40,
+      "nombreProducto": "Té de canela",
+      "precioProducto": "55",
       "categoria": "bebida-caliente",
       "id": 5
     },
@@ -43,16 +43,10 @@
       "id": 7
     },
     {
-      "nombreProducto": "licuado",
-      "precioProducto": 50,
+      "nombreProducto": "licuado de banana",
+      "precioProducto": "100",
       "categoria": "bebida-fria",
       "id": 9
-    },
-    {
-      "nombreProducto": "Medialuna con dulce de leche",
-      "precioProducto": 60,
-      "categoria": "dulce",
-      "id": 18
     }
   ]
 }

@@ -2,7 +2,7 @@
   "cafeteria": [
     {
       "nombreProducto": "cafe con leche",
-      "precioProducto": "50",
+      "precioProducto": "75",
       "categoria": "bebida-caliente",
       "id": 1
     },
